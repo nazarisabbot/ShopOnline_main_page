@@ -42,9 +42,11 @@
             </a>
           </li>
 
-          <li class="header__item header__item_search">
+          <li class="header__item header__item_button">
             <button class="header__button header__button_menu">Меню</button>
+          </li>
 
+          <li class="header__item header__item_search">
             <form class="header__form" action="https://jsonplaceholder.typicode.com/posts" method="POST"
               target="_blank">
               <input type="text" name="request" placeholder="Я ищу" required>
@@ -114,9 +116,9 @@
     <section class="main-screen">
       <div class="container">
         <div class="main-screen__body">
-          <h2 class="header-screen__title">-50% на все ноутбуки</h2>
-          <ul class="header-screen__data">
-            <li class="main-screen__paragraph_promotion">До конца акции:</li>
+          <h2 class="main-screen__title">-50% на все ноутбуки</h2>
+          <ul class="main-screen__data">
+            <li class="main-screen__promotion">До конца акции:</li>
             <li class="main-screen__ditails">
               <h5 class="main-screen__paragraph main-screen__paragraph_day">3 <span>дня</span></h5>
               <h5 class="main-screen__paragraph main-screen__paragraph_hours">8 <span>часов</span></h5>
@@ -128,77 +130,81 @@
     </section>
 
     <section class="ofer">
-      <h1 class="ofer__title">Предложение по покупке товара со скидкой</h1>
       <div class="container">
+        <h1 class="ofer__title">Предложение по скидкам на 2023 год</h1>
         <ul class="ofer__body">
-          <li class="ofer_list book">
-            <figure class="book__img">
-              <img src="img/book.png" alt="Фото раскрытой книги">
-              <figcaption>Книга - <span>лучший подарок</span></figcaption>
-            </figure>
+
+          <li class="ofer__list ofer__list_book">
+            <a class="ofer__link" href="#" target="_blank" title="Категория книг"></a>
+            <p class="ofer__text ofer__text_book">Книга - <span>лучший подарок</span></p>
+            <img src="img/book.png" alt="Фото книги с очками">
           </li>
-          <li class="ofer_list time">
-            <figure class="time__img">
-              <img src="img/discount.png" alt="Фото часов с минутной и часовой стрелкой">
-              <figcaption>Время скидок</figcaption>
-            </figure>
-            <p class="time__discount" data-discount="-25">-25%</p>
+
+          <li class="ofer__list ofer__list_time" data-discount="-25%">
+            <a class="ofer__link" href="#" target="_blank" title="Время скидок!"></a>
+            <p class="ofer__text ofer__text_time">Время скидок!</p>
+            <img src="img/discount.png" alt="Фото стрелочных часов">
           </li>
-          <li class="ofer_list pair-sneakers">
-            <figure class="pair-sneakers__img">
-              <img src="img/pair_sneakers.png" alt="Фото кроссовок">
-              <figcaption>Вторая пара красовок <span>в подарок</span></figcaption>
-            </figure>
+
+          <li class="ofer__list ofer__list_pair-sneakers">
+            <a class="ofer__link" href="#" target="_blank" title="Вторая пара красовок в подарок"></a>
+            <p class="ofer__text ofer__text_pair-sneakers">Вторая пара красовок <span>в подарок!</span></p>
+            <img src="img/pair_sneakers.png" alt="Фото пар кроссовок">
           </li>
-          <li class="ofer_list present">
-            <figure class="present__img">
-              <img src="img/present.png" alt="Фото двух коробок в подарочной упаковке">
-              <figcaption>Идеи новогодних подарков</figcaption>
-            </figure>
+
+          <li class="ofer__list ofer__list_present">
+            <a class="ofer__link" href="#" target="_blank" title="Фото двух коробок в подарочной упаковке"></a>
+            <p class="ofer__text ofer__text_present">Идеи новогодних подарков</p>
+            <img src="img/present.png" alt="Фото двух коробок в подарочной бумаге">
           </li>
-          <li class="ofer_list sneakers">
-            <figure class="sneakers__img">
-              <img src="img/sneakers.png" alt="Фото красного кроссовка">
-            </figure>
-            <p class="sneakers__discount" data-discount="-40">-40%</p>
+
+          <li class="ofer__list ofer__list_notebook" data-discount="-15%">
+            <a class="ofer__link" href="#" target="_blank" title="Ноутбуки со скидкой"></a>
+            <p class="ofer__text ofer__text_notebook">Выгодно в декабре!</p>
+            <img src="img/notebook.png" alt="Фото ноутбука">
           </li>
-          <li class="ofer_list notebook">
-            <figure class="notebook__img">
-              <img src="img/notebook.png" alt="Фото ноутбука серебристого цвета">
-              <figcaption>Выгодно в декабре!</figcaption>
-            </figure>
-            <p class="notebook__discount" data-discount="-15">-15%</p>
+
+          <li class="ofer__list ofer__list_sneakers" data-discount="-40%">
+            <a class="ofer__link" href="#" target="_blank" title="Красовки со скидкой 40%"></a>
+            <img src="img/sneakers.png" alt="Фото красного кроссовка">
           </li>
-          <li class="ofer_list ny">
-            <figure class="ny__img">
-              <img src="img/ny_2022.png" alt="3 дэ надпись 2022, вместо нуля стоит подарок">
-              <figcaption>Новогодние украшения</figcaption>
-            </figure>
+
+          <li class="ofer__list ofer__list_ny">
+            <a class="ofer__link" href="#" target="_blank" title="Лучшие скидки 2022 года"></a>
+            <p class="ofer__text ofer__text_ny">Новогодние украшения</p>
+            <img src="img/ny_2022.png" alt="3 D надпись 2023">
           </li>
-          <li class="ofer_list dress">
-            <figure class="dress__img">
-              <img src="img/red_dress.png" alt="Фото девушки в красном платье в цветочек">
-            </figure>
-            <p class="dress__discount" data-discount="-55">-55%</p>
+
+          <li class="ofer__list ofer__list_dress" data-discount="-55%">
+            <a class="ofer__link" href="#" target="_blank" title="Женские платья со скидкой 55%"></a>
+            <img class="ofer__img ofer__img_dress" src="img/red_dress.png" alt="Фото девушки в красном платье">
           </li>
-          <li class="ofer_list chemicals">
-            <figure class="chemicals__img">
-              <img src="img/chemicals.png"
-                alt="Фото руки в фиолетовой резиновой перчатке, держащей флакон с распылителем">
-              <figcaption>На бытовую химию</figcaption>
-            </figure>
-            <p class="chemicals__discount" data-discount="-25">-25%</p>
+
+          <li class="ofer__list ofer__list_min-dress" data-discount="-55%">
+            <a class="ofer__link" href="#" target="_blank" title="Женские платья со скидкой 55%"></a>
+            <img class="ofer__img ofer__img_dress" src="img/red_dress.png" alt="Фото девушки в красном платье">
           </li>
-          <li class="ofer_list toy">
-            <figure class="toy__img">
-              <img src="img/christmas_toy.png" alt="Фото новогодних игрушек на красном фоне">
-            </figure>
+
+          <li class="ofer__list ofer__list_chemicals" data-discount="-25%">
+            <a class="ofer__link" href="#" target="_blank" title="Бытовая химия со скидкой 25%"></a>
+            <p class="ofer__text ofer__text_chemicals">На бытовую химию</p>
+            <img src="img/chemicals.png" alt="Фото бытовой химии">
           </li>
+
+          <li class="ofer__list ofer__list_toy">
+            <a class="ofer__link" href="#" target="_blank" title="Новогодние игрушки"></a>
+            <img src="img/christmas_toy.png" alt="Фото новогодних игрушек">
+          </li>
+
         </ul>
+
       </div>
     </section>
 
   </main>
+
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>

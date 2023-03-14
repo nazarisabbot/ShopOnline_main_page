@@ -2,7 +2,7 @@
 .main-screen {
   width: 100%;
   height: 100%;
-  padding: 63px 0 63px 0;
+  padding: 30px 0 63px 0;
   user-select: none;
 }
 
@@ -17,19 +17,21 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 20px;
 }
 
-.header-screen__title {
+.main-screen__title {
   position: absolute;
   left: 133px;
   top: 160px;
   font-weight: 700;
   font-size: 70px;
+  letter-spacing: 2px;
   line-height: 130%;
   color: var(--color-white);
 }
 
-.header-screen__data {
+.main-screen__data {
   position: absolute;
   left: 50%;
   bottom: 40px;
@@ -43,11 +45,12 @@
 }
 
 .main-screen__ditails {
+  width: 506px;
   display: flex;
   gap: 30px;
 }
 
-.main-screen__paragraph_promotion {
+.main-screen__promotion {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.3;
@@ -64,6 +67,69 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 1.3;
+}
+
+@media (max-width: 1920px) {
+  .main-screen {
+    padding-top: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+  }
+
+  .main-screen__title {
+    left: calc(20px + (133 - 20) * ((100vw - 320px) / (1920 - 320)));
+    top: calc(50px + (160 - 50) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(20px + (70 - 20) * ((100vw - 320px) / (1920 - 320)));
+  }
+
+  .main-screen__paragraph {
+    font-size: calc(20px + (60 - 20) * ((100vw - 320px) / (1920 - 320))); 
+  }
+  
+  .main-screen__paragraph > span {
+    font-size: calc(12px + (32 - 12) * ((100vw - 320px) / (1920 - 320)));
+  }
+
+  .main-screen__promotion {
+    font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1920 - 320)));
+  }
+
+  .main-screen__ditails {
+    width: calc(240px + (506 - 240) * ((100vw - 320px) / (1920 - 320)));
+    gap: 30px;
+  }
+
+  .main-screen__data {
+    bottom: calc(16px + (40 - 16) * ((100vw - 320px) / (1920 - 320))); 
+  }
+}
+
+@media (max-width: 1024px) {
+  .main-screen {
+    padding-bottom: 22px;
+  }
+
+  .main-screen__body {
+    background-image: url('../img/main_banner_1024.png');
+  }
+}
+
+@media (max-width: 768px) {
+  .main-screen {
+    padding-bottom: 40px;
+  }
+
+  .main-screen__body {
+    background-image: url('../img/main_banner_768.png');
+  }
+}
+
+@media (max-width: 320px) {
+  .main-screen {
+    padding-bottom: 20px;
+  }
+
+  .main-screen__body {
+    background-image: url('../img/main_banner_320.png');
+  }
 }
 
 

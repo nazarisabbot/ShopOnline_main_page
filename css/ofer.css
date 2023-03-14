@@ -1,0 +1,1048 @@
+
+.ofer {
+  width: 100%;
+  height: 100%;
+  padding: 30px 0 140px 0;
+}
+
+/* Main grid container */
+.ofer__body {
+  display: grid;
+  grid-template-columns: 13.6% 13.6% 29.15% 13.6% 13.6%;
+  grid-template-areas: 
+  "book time pair-sneakers present present"
+  "sneakers sneakers pair-sneakers notebook notebook"
+  "ny ny ny dress chemicals"
+  "ny ny ny dress toy";
+  row-gap: 26px;
+  justify-content: space-between;
+}
+
+/* Basic style */
+.ofer__title {
+  display: none;
+}
+
+.ofer__list_min-dress {
+  display: none;
+}
+
+.ofer__list_min-dress::before {
+  content: attr(data-discount);
+  position: absolute;
+  bottom: 50px;
+  right: 28px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.3;
+  z-index: 2;
+}
+
+.ofer__list_min-dress::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 88px;
+  height: 88px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1;
+}
+
+.ofer__list {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.ofer__list > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.ofer__list > img {
+  display: block;
+  object-fit: cover;
+}
+
+/* Book block style */
+.ofer__list_book {
+  grid-area: book;
+}
+
+.ofer__text_book {
+  position: absolute;
+  z-index: 1;
+  bottom: 27px;
+  left: 20px;
+  width: 190px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: .9;
+}
+
+.ofer__text_book > span {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+/* Time block style */
+.ofer__list_time {
+  grid-area: time;
+}
+
+.ofer__list_time::before {
+  content: attr(data-discount);
+  position: absolute;
+  bottom: 52px;
+  right: 28px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.3;
+  z-index: 2;
+}
+
+.ofer__list_time::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 88px;
+  height: 88px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1;
+}
+
+.ofer__text_time {
+  position: absolute;
+  z-index: 1;
+  bottom: 150px;
+  left: 14px;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 1.3;
+  letter-spacing: 2px;
+}
+
+/* Pair-sneakers block style */
+.ofer__list_pair-sneakers {
+  grid-area: pair-sneakers;
+}
+
+.ofer__text_pair-sneakers {
+  position: absolute;
+  width: 450px;
+  padding: 24px 24px;
+  z-index: 1;
+  bottom: 20px;
+  left: 20px;
+  background-color: var(--color-wave);
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 1.3;
+}
+
+.ofer__text_pair-sneakers > span {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+/* Present block style */
+.ofer__list_present {
+  grid-area: present;
+}
+
+.ofer__text_present {
+  position: absolute;
+  max-width: 340px;
+  z-index: 1;
+  bottom: 30px;
+  left: 30px;
+  font-size: 40px;
+}
+
+/* Notebook block style */
+.ofer__list_notebook {
+  grid-area: notebook;
+}
+
+.ofer__list_notebook::before {
+  content: attr(data-discount);
+  position: absolute;
+  bottom: 52px;
+  right: 28px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.3;
+  z-index: 2;
+}
+
+.ofer__list_notebook::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 88px;
+  height: 88px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1;
+}
+
+.ofer__text_notebook {
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+  left: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+/* Sneakers block style */
+.ofer__list_sneakers {
+  grid-area: sneakers;
+}
+
+.ofer__list_sneakers::before {
+  content: attr(data-discount);
+  position: absolute;
+  top: 57px;
+  left: 28px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.3;
+  z-index: 2;
+}
+
+.ofer__list_sneakers::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 88px;
+  height: 88px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  top: 30px;
+  left: 20px;
+  z-index: 1;
+}
+
+/* NY block style */
+.ofer__list_ny {
+  grid-area: ny;
+}
+
+.ofer__text_ny {
+  position: absolute;
+  z-index: 1;
+  padding: 30px 43px;
+  bottom: 50px;
+  left: 50px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--color-pink);
+  background-color: var(--color-white);
+  border-radius: 20px;
+}
+
+/* Dress block style */
+.ofer__list_dress {
+  grid-area: dress;
+}
+
+.ofer__list_dress::before {
+  content: attr(data-discount);
+  position: absolute;
+  bottom: 50px;
+  right: 28px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.3;
+  z-index: 2;
+}
+
+.ofer__list_dress::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 88px;
+  height: 88px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1;
+}
+
+/* Chemicals block style */
+.ofer__list_chemicals {
+  grid-area: chemicals;
+}
+
+.ofer__text_chemicals {
+  position: absolute;
+  z-index: 1;
+  bottom: 37px;
+  left: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+}
+
+.ofer__list_chemicals::before {
+  content: attr(data-discount);
+  position: absolute;
+  top: 57px;
+  left: 27px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.3;
+  z-index: 2;
+}
+
+.ofer__list_chemicals::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 88px;
+  height: 88px;
+  background-color: var(--color-yellow);
+  border-radius: 50%;
+  top: 30px;
+  left: 20px;
+  z-index: 1;
+}
+
+/* Toy block style */
+.ofer__list_toy {
+  grid-area: toy;
+}
+
+@media (max-width: 1920px) {
+    /* Basic style */
+    .ofer {
+      padding-top: calc(20px + (30 - 20) * ((100vw - 320px) / (1920 - 320)));
+      padding-bottom: calc(70px + (70 - 70) * ((100vw - 320px) / (1920 - 320)));
+    }
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1024px) {
+    /* Ofer body style */
+    .ofer__body {
+      row-gap: calc(12px + (26 - 12) * ((100vw - 1024px) / (1920 - 1024)));
+    }
+
+  /* Book block*/
+  .ofer__text_book {
+    bottom: calc(10px + (27 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(10px + (20 - 10) * ((100vw - 1024px) / (1600 - 1024)));
+    width: calc(100px + (190 - 100) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(24px + (30 - 24) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  .ofer__text_book > span {
+    font-size: calc(16px + (30 - 16) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  /* Time block */
+  .ofer__list_time::before {
+    bottom: calc(28px + (52 - 28) * ((100vw - 1024px) / (1920 - 1024)));
+    right: calc(19px + (28 - 19) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(18px + (30 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+  
+  .ofer__list_time::after {
+    width: calc(55px + (88 - 55) * ((100vw - 1024px) / (1920 - 1024)));
+    height: calc(55px + (88 - 55) * ((100vw - 1024px) / (1920 - 1024)));
+    bottom: calc(15px + (30 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+    right: calc(15px + (20 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+  
+  .ofer__text_time {
+    bottom: calc(75px + (150 - 75) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(10px + (14 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(12px + (27 - 12) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  /* Pair-sneakers block*/
+  .ofer__text_pair-sneakers {
+    width: calc(250px + (450 - 250) * ((100vw - 1024px) / (1920 - 1024)));
+    padding-top: calc(7px + (24 - 7) * ((100vw - 1024px) / (1920 - 1024)));
+    padding-bottom: calc(7px + (24 - 7) * ((100vw - 1024px) / (1920 - 1024)));
+    bottom: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(20px + (39 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+  
+  .ofer__text_pair-sneakers > span {
+    font-size: calc(25px + (42 - 25) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  /* Present block*/
+  .ofer__text_present {
+    bottom: calc(17px + (30 - 17) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(10px + (30 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(25px + (39 - 25) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  /* Notebook block*/
+  .ofer__list_notebook::before {
+    bottom: calc(28px + (52 - 28) * ((100vw - 1024px) / (1920 - 1024)));
+    right: calc(19px + (28 - 19) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(18px + (30 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+  
+  .ofer__list_notebook::after {
+    width: calc(55px + (88 - 55) * ((100vw - 1024px) / (1920 - 1024)));
+    height: calc(55px + (88 - 55) * ((100vw - 1024px) / (1920 - 1024)));
+    bottom: calc(15px + (30 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+    right: calc(15px + (20 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+  
+  .ofer__text_notebook {
+    bottom: calc(25px + (30 - 25) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(10px + (30 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(20px + (40 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  /* Sneakers block style */
+  .ofer__list_sneakers::before {
+    top: calc(28px + (57 - 28) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(15px + (28 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(18px + (30 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  .ofer__list_sneakers::after {
+    width: calc(55px + (88 - 55) * ((100vw - 1024px) / (1920 - 1024)));
+    height: calc(55px + (88 - 55) * ((100vw - 1024px) / (1920 - 1024)));
+    top: calc(10px + (30 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  /* NY block*/
+  .ofer__text_ny {
+    padding-top: calc(15px + (30 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+    padding-bottom: calc(15px + (43 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+    bottom: calc(20px + (50 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(20px + (50 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(20px + (40 - 20) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  /* Dress block style */
+  .ofer__list_dress::before {
+    bottom: calc(28px + (50 - 28) * ((100vw - 1024px) / (1920 - 1024)));
+    right: calc(15px + (28 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(18px + (30 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+  
+  .ofer__list_dress::after {
+    width: calc(55px + (88 - 55) * ((100vw - 1024px) / (1920 - 1024)));
+    height: calc(55px + (88 - 55) * ((100vw - 1024px) / (1920 - 1024)));
+    bottom: calc(15px + (30 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+    right: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  /* Chemicals block style */
+  .ofer__text_chemicals {
+    bottom: calc(17px + (37 - 17) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(10px + (20 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(15px + (30 - 15) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  .ofer__list_chemicals::before {
+    top: calc(22px + (57 - 22) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(10px + (27 - 10) * ((100vw - 1024px) / (1920 - 1024)));
+    font-size: calc(18px + (30 - 18) * ((100vw - 1024px) / (1920 - 1024)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+
+  .ofer__list_chemicals::after {
+    width: calc(55px + (88 - 55) * ((100vw - 1024px) / (1920 - 1024)));
+    height: calc(55px + (88 - 55) * ((100vw - 1024px) / (1920 - 1024)));
+    top: calc(5px + (30 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+    left: calc(5px + (20 - 5) * ((100vw - 1024px) / (1920 - 1024)));
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  /* Ofer body block */
+  .ofer__body {
+    grid-template-columns: 22.72% 22.72% 21% 20.72%;
+    grid-template-areas: 
+    "book time pair-sneakers pair-sneakers"
+    "sneakers sneakers pair-sneakers pair-sneakers"
+    "present present dress chemicals"
+    "notebook notebook dress toy"
+    "ny ny ny ny";
+    row-gap: 22px;
+  }
+
+  /* Book block*/
+  .ofer__text_book {
+    bottom: calc(10px + (27 - 10) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(10px + (20 - 10) * ((100vw - 768px) / (1024 - 768)));
+    width: calc(100px + (190 - 100) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(26px + (30 - 26) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  .ofer__text_book > span {
+    font-size: calc(20px + (24 - 20) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  /* Time block */
+  .ofer__list_time::before {
+    bottom: calc(24px + (52 - 24) * ((100vw - 768px) / (1024 - 768)));
+    right: calc(20px + (28 - 20) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(18px + (27 - 18) * ((100vw - 768px) / (1024 - 768)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 768px) / (1024 - 768)));
+  }
+  
+  .ofer__list_time::after {
+    width: calc(55px + (88 - 55) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(55px + (88 - 55) * ((100vw - 768px) / (1024 - 768)));
+    bottom: calc(10px + (30 - 10) * ((100vw - 768px) / (1024 - 768)));
+    right: calc(15px + (20 - 15) * ((100vw - 768px) / (1024 - 768)));
+  }
+  
+  .ofer__text_time {
+    bottom: calc(75px + (130 - 75) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(10px + (14 - 10) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(16px + (22 - 16) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  /* Pair-sneakers block*/
+  .ofer__text_pair-sneakers {
+    width: calc(280px + (390 - 280) * ((100vw - 768px) / (1024 - 768)));
+    padding-top: calc(12px + (24 - 12) * ((100vw - 768px) / (1024 - 768)));
+    padding-bottom: calc(12px + (24 - 12) * ((100vw - 768px) / (1024 - 768)));
+    bottom: calc(15px + (20 - 15) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(8px + (20 - 8) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(22px + (33 - 22) * ((100vw - 768px) / (1024 - 768)));
+  }
+  
+  .ofer__text_pair-sneakers > span {
+    font-size: calc(25px + (42 - 25) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  /* Present block*/
+  .ofer__text_present {
+    bottom: calc(17px + (22 - 17) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(10px + (30 - 10) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(25px + (30 - 25) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  /* Notebook block*/
+  .ofer__list_notebook::before {
+    bottom: calc(24px + (52 - 24) * ((100vw - 768px) / (1024 - 768)));
+    right: calc(20px + (28 - 20) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(18px + (27 - 18) * ((100vw - 768px) / (1024 - 768)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 768px) / (1024 - 768)));
+  }
+  
+  .ofer__list_notebook::after {
+    width: calc(55px + (88 - 55) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(55px + (88 - 55) * ((100vw - 768px) / (1024 - 768)));
+    bottom: calc(10px + (30 - 10) * ((100vw - 768px) / (1024 - 768)));
+    right: calc(15px + (20 - 15) * ((100vw - 768px) / (1024 - 768)));
+  }
+  
+  .ofer__text_notebook {
+    bottom: calc(15px + (45 - 15) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(10px + (30 - 10) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(25px + (33 - 25) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  /* Sneakers block style */
+  .ofer__list_sneakers::before {
+    top: calc(28px + (45 - 28) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(15px + (28 - 15) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(18px + (30 - 18) * ((100vw - 768px) / (1024 - 768)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  .ofer__list_sneakers::after {
+    width: calc(55px + (88 - 55) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(55px + (88 - 55) * ((100vw - 768px) / (1024 - 768)));
+    top: calc(10px + (15 - 10) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(10px + (20 - 10) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  /* NY block*/
+  .ofer__text_ny {
+    padding-top: calc(15px + (20 - 15) * ((100vw - 768px) / (1024 - 768)));
+    padding-bottom: calc(15px + (20 - 15) * ((100vw - 768px) / (1024 - 768)));
+    bottom: calc(20px + (35 - 20) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(20px + (50 - 20) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(20px + (35 - 20) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  /* Dress block style */
+  .ofer__list_dress::before {
+    bottom: calc(28px + (50 - 28) * ((100vw - 768px) / (1024 - 768)));
+    right: calc(15px + (25 - 15) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(18px + (30 - 18) * ((100vw - 768px) / (1024 - 768)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 768px) / (1024 - 768)));
+  }
+  
+  .ofer__list_dress::after {
+    width: calc(55px + (88 - 55) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(55px + (88 - 55) * ((100vw - 768px) / (1024 - 768)));
+    bottom: calc(15px + (30 - 15) * ((100vw - 768px) / (1024 - 768)));
+    right: calc(10px + (20 - 10) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  /* Chemicals block style */
+  .ofer__text_chemicals {
+    bottom: calc(17px + (20 - 17) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(10px + (20 - 10) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(15px + (22 - 15) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  .ofer__list_chemicals::before {
+    top: calc(28px + (47 - 28) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(10px + (24 - 10) * ((100vw - 768px) / (1024 - 768)));
+    font-size: calc(18px + (30 - 18) * ((100vw - 768px) / (1024 - 768)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 768px) / (1024 - 768)));
+  }
+
+  .ofer__list_chemicals::after {
+    width: calc(55px + (88 - 55) * ((100vw - 768px) / (1024 - 768)));
+    height: calc(55px + (88 - 55) * ((100vw - 768px) / (1024 - 768)));
+    top: calc(10px + (20 - 10) * ((100vw - 768px) / (1024 - 768)));
+    left: calc(5px + (20 - 5) * ((100vw - 768px) / (1024 - 768)));
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  /* Ofer body block */
+  .ofer__body {
+    grid-template-columns: 20.30% 20.30% 40% 12.30%;
+    grid-template-rows:
+    calc(70px + (135 - 70) * ((100vw - 480px) / (768 - 480)))
+    calc(58px + (130 - 58) * ((100vw - 480px) / (768 - 480)))
+    calc(40px + (60 - 40) * ((100vw - 480px) / (768 - 480)))
+    calc(15px + (40 - 15) * ((100vw - 480px) / (768 - 480)))
+    calc(2px + (16 - 2) * ((100vw - 480px) / (768 - 480)))
+    calc(2px + (27 - 2) * ((100vw - 480px) / (768 - 480)))
+    calc(15px + (27 - 15) * ((100vw - 480px) / (768 - 480)));
+    
+    grid-template-areas: 
+    "book time pair-sneakers pair-sneakers"
+    "sneakers sneakers pair-sneakers pair-sneakers"
+    "present present pair-sneakers pair-sneakers"
+    "present present dress chemicals"
+    "notebook notebook dress chemicals"
+    "notebook notebook dress toy"
+    "notebook notebook dress toy"
+    "ny ny ny ny";
+    justify-content: space-between;
+    row-gap: 22px;
+  }
+
+  /* Book block*/
+  .ofer__list_book {
+    grid-area: book;
+  }
+
+  .ofer__text_book {
+    bottom: calc(1px + (5 - 1) * ((100vw - 480px) / (768 - 480)));
+    left: calc(10px + (20 - 10) * ((100vw - 480px) / (768 - 480)));
+    width: calc(100px + (150 - 100) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(14px + (22 - 14) * ((100vw - 480px) / (768 - 480)));
+  }
+
+  .ofer__text_book > span {
+    font-size: calc(14px + (20 - 14) * ((100vw - 480px) / (768 - 480)));
+  }
+
+  /* Time block */
+  .ofer__list_time {
+    grid-area: time;
+  }
+
+  .ofer__list_time::before {
+    top: calc(61px + (97 - 61) * ((100vw - 480px) / (768 - 480)));
+    right: calc(12px + (14 - 12) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(8px + (15 - 8) * ((100vw - 480px) / (768 - 480)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 480px) / (768 - 480)));
+  }
+  
+  .ofer__list_time::after {
+    width: calc(30px + (50 - 30) * ((100vw - 480px) / (768 - 480)));
+    height: calc(30px + (50 - 30) * ((100vw - 480px) / (768 - 480)));
+    top: calc(50px + (80 - 50) * ((100vw - 480px) / (768 - 480)));
+    right: calc(8px + (10 - 8) * ((100vw - 480px) / (768 - 480)));
+  }
+  
+  .ofer__text_time {
+    bottom: calc(30px + (65 - 30) * ((100vw - 480px) / (768 - 480)));
+    left: calc(10px + (14 - 10) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(12px + (16 - 12) * ((100vw - 480px) / (768 - 480)));
+  }
+
+  /* Pair-sneakers block*/
+  .ofer__list_pair-sneakers {
+    grid-area: pair-sneakers;
+  }
+
+  .ofer__text_pair-sneakers {
+    width: calc(210px + (350 - 210) * ((100vw - 480px) / (768 - 480)));
+    padding-top: calc(6px + (8 - 6) * ((100vw - 480px) / (768 - 480)));
+    padding-bottom: calc(6px + (8 - 6) * ((100vw - 480px) / (768 - 480)));
+    bottom: calc(1px + (5 - 1) * ((100vw - 480px) / (768 - 480)));
+    left: calc(8px + (20 - 8) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(10px + (19 - 10) * ((100vw - 480px) / (768 - 480)));
+  }
+  
+  .ofer__text_pair-sneakers > span {
+    font-size: calc(10px + (19 - 10) * ((100vw - 480px) / (768 - 480)));
+  }
+
+  /* Present block*/
+  .ofer__list_present {
+    grid-area: present;
+  }
+
+  .ofer__text_present {
+    bottom: calc(8px + (10 - 8) * ((100vw - 480px) / (768 - 480)));
+    left: calc(8px + (10 - 8) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(12px + (20 - 12) * ((100vw - 480px) / (768 - 480)));
+  }
+
+  /* Notebook block*/
+  .ofer__list_notebook {
+    grid-area: notebook;
+  }
+
+  .ofer__list_notebook::before {
+    bottom: calc(15px + (21 - 15) * ((100vw - 480px) / (768 - 480)));
+    right: calc(12px + (15 - 12) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(10px + (18 - 10) * ((100vw - 480px) / (768 - 480)));
+    letter-spacing: 1px;
+  }
+  
+  .ofer__list_notebook::after {
+    width: calc(35px + (55 - 35) * ((100vw - 480px) / (768 - 480)));
+    height: calc(35px + (55 - 35) * ((100vw - 480px) / (768 - 480)));
+    bottom: calc(6px + (8 - 6) * ((100vw - 480px) / (768 - 480)));
+    right: calc(8px + (10 - 8) * ((100vw - 480px) / (768 - 480)));
+  }
+  
+  .ofer__text_notebook {
+    bottom: calc(15px + (20 - 15) * ((100vw - 480px) / (768 - 480)));
+    left: calc(7px + (10 - 7) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(11px + (20 - 11) * ((100vw - 480px) / (768 - 480)));
+  }
+
+  /* Sneakers block style */
+  .ofer__list_sneakers {
+    grid-area: sneakers;
+  }
+
+  .ofer__list_sneakers::before {
+    top: calc(18px + (27 - 18) * ((100vw - 480px) / (768 - 480)));
+    left: calc(10px + (14 - 10) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(12px + (18 - 12) * ((100vw - 480px) / (768 - 480)));
+    letter-spacing: 1px;
+  }
+
+  .ofer__list_sneakers::after {
+    width: calc(35px + (55 - 35) * ((100vw - 480px) / (768 - 480)));
+    height: calc(35px + (55 - 35) * ((100vw - 480px) / (768 - 480)));
+    top: calc(6px + (10 - 6) * ((100vw - 480px) / (768 - 480)));
+    left: calc(8px + (10 - 8) * ((100vw - 480px) / (768 - 480)));
+  }
+
+  /* NY block*/
+  .ofer__list_ny {
+    grid-area: ny; 
+  }
+
+  .ofer__text_ny {
+    padding-top: calc(10px + (17 - 10) * ((100vw - 480px) / (768 - 480)));
+    padding-bottom: calc(10px + (17 - 10) * ((100vw - 480px) / (768 - 480)));
+    bottom: calc(12px + (25 - 12) * ((100vw - 480px) / (768 - 480)));
+    left: calc(20px + (20 - 20) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(15px + (25 - 15) * ((100vw - 480px) / (768 - 480)));
+  }
+
+  /* Dress block style */
+  .ofer__list_dress {
+    grid-area: dress;
+  }
+
+  .ofer__list_dress::before {
+    top: calc(86px + (143 - 86) * ((100vw - 480px) / (768 - 480)));
+    right: calc(11px + (13 - 11) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(8px + (15 - 8) * ((100vw - 480px) / (768 - 480)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 480px) / (768 - 480)));
+  }
+  
+  .ofer__list_dress::after {
+    width: calc(30px + (50 - 30) * ((100vw - 480px) / (768 - 480)));
+    height: calc(30px + (50 - 30) * ((100vw - 480px) / (768 - 480)));
+    top: calc(75px + (125 - 75) * ((100vw - 480px) / (768 - 480)));
+    right: calc(8px + (10 - 8) * ((100vw - 480px) / (768 - 480)));
+  }
+
+  /* Chemicals block style */
+  .ofer__list_chemicals {
+    grid-area: chemicals;
+  }
+
+  .ofer__list_chemicals::before {
+    top: calc(11px + (17 - 11) * ((100vw - 480px) / (768 - 480)));
+    left: calc(5px + (7 - 5) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(7px + (10 - 7) * ((100vw - 480px) / (768 - 480)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 480px) / (768 - 480)));
+  }
+  
+  .ofer__list_chemicals::after {
+    width: calc(24px + (35 - 24) * ((100vw - 480px) / (768 - 480)));
+    height: calc(24px + (35 - 24) * ((100vw - 480px) / (768 - 480)));
+    top: calc(3px + (5 - 3) * ((100vw - 480px) / (768 - 480)));
+    left: calc(4px + (5 - 4) * ((100vw - 480px) / (768 - 480)));
+  }
+  
+  .ofer__text_chemicals {
+    top: calc(33px + (55 - 33) * ((100vw - 480px) / (768 - 480)));
+    left: calc(5px + (10 - 5) * ((100vw - 480px) / (768 - 480)));
+    font-size: calc(6px + (10 - 6) * ((100vw - 480px) / (768 - 480)));
+  }
+
+  /* Toy block */
+  .ofer__list_toy {
+    grid-area: toy;
+  }
+}
+
+@media (max-width: 479px) {
+  /* Ofer__list_min-dress block */
+   .ofer__list_min-dress {
+     display: block;
+   }
+
+   .ofer__list_dress {
+     display: none;
+   }
+
+  /* Ofer body block */
+   .ofer__body {
+    grid-template-columns: repeat(2, 1fr);    
+    grid-template-areas:
+    "book time"
+    "sneakers sneakers"
+    "pair-sneakers pair-sneakers"
+    "present present"
+    "notebook notebook"
+    "dress chemicals"
+    "dress toy"
+    "ny ny";
+    justify-content: space-between;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+
+  /* Book block*/
+  .ofer__list_book {
+    grid-area: book;
+  }
+
+  .ofer__text_book {
+    bottom: calc(1px + (5 - 1) * ((100vw - 320px) / (479 - 320)));
+    left: calc(10px + (20 - 10) * ((100vw - 320px) / (479 - 320)));
+    width: calc(100px + (150 - 100) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (479 - 320)));
+  }
+
+  .ofer__text_book > span {
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (479 - 320)));
+  }
+
+  /* Time block */
+  .ofer__list_time {
+    grid-area: time;
+  }
+
+  .ofer__list_time::before {
+    top: calc(95px + (137 - 95) * ((100vw - 320px) / (479 - 320)));
+    right: calc(10px + (17 - 10) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (479 - 320)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 320px) / (479 - 320)));
+  }
+  
+  .ofer__list_time::after {
+    width: calc(45px + (80 - 45) * ((100vw - 320px) / (479 - 320)));
+    height: calc(45px + (80 - 45) * ((100vw - 320px) / (479 - 320)));
+    top: calc(80px + (110 - 80) * ((100vw - 320px) / (479 - 320)));
+    right: calc(8px + (10 - 8) * ((100vw - 320px) / (479 - 320)));
+  }
+  
+  .ofer__text_time {
+    bottom: calc(54px + (100 - 54) * ((100vw - 320px) / (479 - 320)));
+    left: calc(10px + (14 - 10) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(20px + (25 - 20) * ((100vw - 320px) / (479 - 320)));
+  }
+
+  /* Pair-sneakers block*/
+  .ofer__list_pair-sneakers {
+    grid-area: pair-sneakers;
+  }
+
+  .ofer__text_pair-sneakers {
+    width: 90%;
+    padding-top: calc(6px + (8 - 6) * ((100vw - 320px) / (479 - 320)));
+    padding-bottom: calc(6px + (8 - 6) * ((100vw - 320px) / (479 - 320)));
+    bottom: calc(9px + (12 - 9) * ((100vw - 320px) / (479 - 320)));
+    left: calc(8px + (20 - 8) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(21px + (21 - 21) * ((100vw - 320px) / (479 - 320)));
+  }
+  
+  .ofer__text_pair-sneakers > span {
+    font-size: calc(21px + (21 - 21) * ((100vw - 320px) / (479 - 320)));
+  }
+
+  /* Present block*/
+  .ofer__list_present {
+    grid-area: present;
+  }
+
+  .ofer__text_present {
+    bottom: calc(8px + (10 - 8) * ((100vw - 320px) / (479 - 320)));
+    left: calc(8px + (10 - 8) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (479 - 320)));
+  }
+
+  /* Notebook block*/
+  .ofer__list_notebook {
+    grid-area: notebook;
+  }
+
+  .ofer__list_notebook::before {
+    top: calc(75px + (100 - 75) * ((100vw - 320px) / (479 - 320)));
+    right: calc(12px + (17 - 12) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (479 - 320)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 320px) / (479 - 320)));
+  }
+  
+  .ofer__list_notebook::after {
+    width: calc(45px + (80 - 45) * ((100vw - 320px) / (479 - 320)));
+    height: calc(45px + (80 - 45) * ((100vw - 320px) / (479 - 320)));
+    top: calc(60px + (75 - 60) * ((100vw - 320px) / (479 - 320)));
+    right: calc(8px + (12 - 8) * ((100vw - 320px) / (479 - 320)));
+  }
+  
+  .ofer__text_notebook {
+    bottom: calc(20px + (27 - 20) * ((100vw - 320px) / (479 - 320)));
+    left: calc(9px + (12 - 9) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (479 - 320)));
+  }
+
+  /* Sneakers block style */
+  .ofer__list_sneakers {
+    grid-area: sneakers;
+  }
+
+  .ofer__list_sneakers::before {
+    top: calc(22px + (35 - 22) * ((100vw - 320px) / (479 - 320)));
+    left: calc(10px + (17 - 10) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (479 - 320)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 320px) / (479 - 320)));
+  }
+  
+  .ofer__list_sneakers::after {
+    width: calc(45px + (80 - 45) * ((100vw - 320px) / (479 - 320)));
+    height: calc(45px + (80 - 45) * ((100vw - 320px) / (479 - 320)));
+    top: calc(8px + (10 - 8) * ((100vw - 320px) / (479 - 320)));
+    left: calc(8px + (10 - 8) * ((100vw - 320px) / (479 - 320)));
+  }
+
+  /* NY block*/
+  .ofer__list_ny {
+    grid-area: ny; 
+  }
+
+  .ofer__text_ny {
+    padding-top: calc(8px + (10 - 8) * ((100vw - 320px) / (479 - 320)));
+    padding-bottom: calc(8px + (10 - 8) * ((100vw - 320px) / (479 - 320)));
+    bottom: calc(8px + (10 - 8) * ((100vw - 320px) / (479 - 320)));
+    left: calc(18px + (20 - 18) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(11px + (20 - 11) * ((100vw - 320px) / (479 - 320)));
+  }
+
+  /* Dress block style */
+  .ofer__list_min-dress {
+    grid-area: dress;
+  }
+
+  .ofer__list_min-dress::before {
+    bottom: calc(27px + (35 - 27) * ((100vw - 320px) / (479 - 320)));
+    right: calc(10px + (17 - 10) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (479 - 320)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 320px) / (479 - 320)));
+  }
+  
+  .ofer__list_min-dress::after {
+    width: calc(45px + (80 - 45) * ((100vw - 320px) / (479 - 320)));
+    height: calc(45px + (80 - 45) * ((100vw - 320px) / (479 - 320)));
+    bottom: 15px;
+    right: calc(8px + (12 - 8) * ((100vw - 320px) / (479 - 320)));
+  }
+
+  /* Chemicals block style */
+  .ofer__list_chemicals {
+    grid-area: chemicals;
+  }
+
+  .ofer__list_chemicals::before {
+    top: calc(22px + (35 - 22) * ((100vw - 320px) / (479 - 320)));
+    left: calc(11px + (17 - 11) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(15px + (25 - 15) * ((100vw - 320px) / (479 - 320)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 320px) / (479 - 320)));
+  }
+  
+  .ofer__list_chemicals::after {
+    width: calc(45px + (80 - 45) * ((100vw - 320px) / (479 - 320)));
+    height: calc(45px + (80 - 45) * ((100vw - 320px) / (479 - 320)));
+    top: calc(8px + (10 - 8) * ((100vw - 320px) / (479 - 320)));
+    left: calc(8px + (10 - 8) * ((100vw - 320px) / (479 - 320)));
+  }
+  
+  .ofer__text_chemicals {
+    bottom: calc(9px + (10 - 9) * ((100vw - 320px) / (479 - 320)));
+    left: calc(7px + (12 - 7) * ((100vw - 320px) / (479 - 320)));
+    font-size: calc(17px + (25 - 17) * ((100vw - 320px) / (479 - 320)));
+  }
+
+  /* Toy block */
+  .ofer__list_toy {
+    grid-area: toy;
+  }
+}
+
